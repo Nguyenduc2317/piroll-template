@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat';
+	font-size: 15px;
+	color: #000;
+}
+.container {
+	width: 1170px;
+	margin: auto;
+}
+.clearfix {
+	clear: both;
+}
+.text-center {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+/* header */
+.header-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+.menu li {
+	display: inline-block;
+}
+.menu li a {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 25px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.menu li a:hover,
+.menu li a.active {
+	color: #10c9c3;
+}
+/* show */
+.image-items {
+	position: relative;
+}
+.image-items::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.image-items a {
+	float: left;
+	width: 25%;
+	position: relative;
+}
+.image-items a img {
+	display: block;
+	width: 100%;
+}
+.image-items a i.show-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 48px;
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.image-items a::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: #21bfb9;
+	opacity: 0;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.image-items a:hover i.show-icon,
+.image-items a:hover::before {
+	opacity: 1;
+}
+.image-items a i.show-icon:hover {
+	color: rgba(255, 23, 78, 0.6);
+}
+/* footer */
+.footer {
+	padding: 100px 0 87px;
+	background-color: #000;
+	color: #fff;
+}
+.footer a {
+	font-family: 'Nunito Sans';
+	line-height: 24px;
+	color: #bcbcbc;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.footer-wrap {
+	display: flex;
+}
+.footer-items {
+	width: 33.33%;
+}
+.footer-tittle {
+	font-size: 18px;
+	font-weight: bold;
+}
+.footer-text {
+	font-family: 'Nunito Sans';
+	line-height: 24px;
+	color: #bcbcbc;
+}
+.footer-text-first {
+	margin-top: 25px;
+}
+.footer-items-contact,
+.footer-items-menu {
+	position: relative;
+	top: -5px;
+}
+.footer-items-menu {
+	display: flex;
+}
+.footer-menu {
+	width: 25%;
+}
+.footer-menu-center {
+	width: 50%;
+}
+.footer a:hover {
+	color: #10c9c3;
+}
