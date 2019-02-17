@@ -22,6 +22,12 @@ a {
 	text-align: center;
 }
 /* header */
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
 .header-wrap {
 	display: flex;
 	justify-content: space-between;
@@ -44,61 +50,25 @@ a {
 .menu li a.active {
 	color: #10c9c3;
 }
-/* show */
-.image-items {
-	position: relative;
-}
-.image-items::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-.image-items a {
-	float: left;
-	width: 25%;
-	position: relative;
-}
-.image-items a img {
-	display: block;
-	width: 100%;
-}
-.image-items a i.show-icon {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 48px;
-	color: #fff;
-	opacity: 0;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
-}
-.image-items a::before {
-	position: absolute;
-	content: "";
-	height: 100%;
-	width: 100%;
-	background-color: #21bfb9;
-	opacity: 0;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
-}
-.image-items a:hover i.show-icon,
-.image-items a:hover::before {
-	opacity: 1;
-}
-.image-items a i.show-icon:hover {
-	color: rgba(255, 23, 78, 0.6);
-}
 /* form component */
 .form {
+	padding: 100px 0;
 	background-color: #f5f5f5;
 }
+.form-tittle {
+	font-size: 30px;
+}
+.form-text {
+	width: 540px;
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	color: #787878;
+	margin: 29px auto 0;
+	line-height: 24px;
+}
 .form-wrap {
-	width: 570px;
-	margin: auto;
+	width: 670px;
+	margin: 33px auto 0;
 }
 .input-items {
 	border: none;
@@ -141,7 +111,282 @@ a {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #fff;
+	border: none;
 }
+/* baner */
+.baner {
+	width: 100%;
+	background: url('../images/bannercontact.png') no-repeat center left/cover;
+	background-attachment: fixed;
+	padding: 237px 0 200px;
+}
+.baner-content {
+	width: 50%;
+	float: right;
+	padding-left: 85px;
+}
+.baner-tittle {
+	font-size: 38px;
+}
+.baner-text {
+	font-family: 'Nunito Sans';
+	font-size: 18px;
+	color: #787878;
+	line-height: 24px;
+	margin-top: 28px;
+}
+.baner-button {
+	margin-top: 33px;
+}
+/* press */
+.press {
+	padding: 97px 0 100px;
+}
+.press-tittle {
+	font-size: 30px;
+	text-transform: capitalize;
+}
+.press-text {
+	width: 620px;
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	color: #787878;
+	line-height: 24px;
+	margin: 29px auto 0;
+}
+.press img {
+	margin-top: 33px;
+}
+/* skills */
+.skills {
+	background-color: #f8f9f9;
+	display: flex;
+}
+.skills-items {
+	width: 50%;
+	height: auto;
+}
+.skills-wrap {
+	width: 585px;
+	float: right;
+	padding: 100px 0;
+}
+.skills-tittle {
+	font-size: 30px;
+}
+.skills-content-lever {
+	margin-top: 33px;
+}
+.skills-content-next {
+	margin-top: 39px;
+}
+.skills-name {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.skills-name span {
+	margin-left: 10px;
+}
+.skill-bar {
+	width: 500px;
+	height: 3px;
+	background-color: #d8d8d8;
+}
+.skill-bar span {
+	display: block;
+	background-color: #10c9c3;
+	margin-top: 18px;
+	height: 100%;
+}
+.skill-bar-1 {
+	width: 75%;
+}
+.skill-bar-2 {
+	width: 90%;
+}
+.skill-bar-3 {
+	width: 65%;
+}
+.skills-img {
+	background: url('../images/bgskill.png') no-repeat right center/cover;
+}
+/* show */
+.image-items {
+	position: relative;
+}
+.image-items::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.image-items a {
+	float: left;
+	width: 25%;
+	position: relative;
+}
+.image-items a img {
+	display: block;
+	width: 100%;
+}
+.image-items a i.show-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 48px;
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.image-items a::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.image-items a:hover i.show-icon,
+.image-items a:hover::before {
+	opacity: 1;
+}
+.image-items a i.show-icon:hover {
+	color: #10c9c3;
+}
+.show-load {
+	padding: 43px 0 42px;
+	background-color: #f5f5f5;
+}
+.show-load a {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #8e8e8e;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.show-load a:hover {
+	color: #10c9c3;
+}
+/* interactive */
+.interactive {
+	background-color: #38bfbd;
+	padding: 100px 0 90px;
+	color: #fff;
+}
+.interactive-items {
+	position: relative;
+	width: 25%;
+	float: left;
+}
+.interactive-items i {
+	position: relative;
+	float: left;
+	top: -4px;
+	font-size: 48px;
+}
+.interactive-items::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.interactive-content {
+	display: inline-block;
+	margin-left: 25px;
+}
+.interactive-content p {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.interactive-content p:first-child {
+	font-size: 15px;
+}
+.interactive-content p:last-child {
+	margin-top: 12px;
+}
+/* several */
+.several {
+	padding: 100px 0;
+	background-color: #f5f5f5;
+}
+.several-items {
+	position: relative;
+}
+.several-items::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.several-items-next {
+	margin-top: 50px;
+}
+.several-content {
+	width: 25%;
+	float: left;
+	padding: 0 20px;
+}
+.several-icon {
+	font-size: 48px;
+}
+.sever-name {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 24px;
+}
+.several-text {
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	color: #787878;
+	line-height: 24px;
+	margin-top: 13px;
+}
+/* video */
+.view {
+	padding: 97px 0;
+}
+.view-tittle {
+	font-size: 30px;
+}
+.view-text {
+	width: 500px;
+	margin:29px auto 0;
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	color: #787878;
+	line-height: 24px;
+}
+.view-video {
+	width: 100%;
+	height: 570px;
+	margin-top: 57px;
+}
+/* slide */
+.slide {
+	background-color: #10c9c3;
+	overflow: hidden;
+}
+.silde-items {
+	position: relative;
+	width: 300%;
+	-webkit-transition: left 1s;
+	-moz-transition: left 1s;
+	-o-transition: left 1s;
+	transition: left 1s;
+}
+.slide-content {
+	position: relative;
+	width: 33.33%;
+	float: left;
+	padding: 173px 0 163px;
+	color: #fff;
+}
+<<<<<<< HEAD
 /* interactive */
 .interactive {
 	background-color: #38bfbd;
@@ -234,6 +479,8 @@ a {
 	padding: 173px 0 163px;
 	color: #fff;
 }
+=======
+>>>>>>> creat interactive component
 .slide-content::after {
 	display: block;
 	content: "";
@@ -279,6 +526,17 @@ a {
 	width: 10px;
 	opacity: 1;
 }
+<<<<<<< HEAD
+=======
+/* client */
+.client {
+	padding: 64px 0 61px;
+	background-color: #fff;
+}
+.client-items {
+	width: 20%;
+}
+>>>>>>> creat interactive component
 /* footer */
 .footer {
 	padding: 100px 0 87px;
