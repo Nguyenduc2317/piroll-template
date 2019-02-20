@@ -142,6 +142,143 @@ a {
 	text-transform: uppercase;
 	color: #fff;
 }
+/* interactive */
+.interactive {
+	background-color: #38bfbd;
+	padding: 100px 0 90px;
+	color: #fff;
+}
+.interactive-items {
+	position: relative;
+	width: 25%;
+	float: left;
+}
+.interactive-items i {
+	position: relative;
+	float: left;
+	top: -4px;
+	font-size: 48px;
+}
+.interactive-items::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.interactive-content {
+	display: inline-block;
+	margin-left: 25px;
+}
+.interactive-content p {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.interactive-content p:first-child {
+	font-size: 15px;
+}
+.interactive-content p:last-child {
+	margin-top: 12px;
+}
+/* several */
+.several {
+	padding: 100px 0;
+}
+.several-items {
+	position: relative;
+}
+.several-items::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.several-items-next {
+	margin-top: 50px;
+}
+.several-content {
+	width: 25%;
+	float: left;
+	padding: 0 20px;
+}
+.several-icon {
+	font-size: 48px;
+}
+.sever-name {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 24px;
+}
+.several-text {
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	color: #787878;
+	line-height: 24px;
+	margin-top: 13px;
+}
+/* slide */
+.slide {
+	background-color: #10c9c3;
+	overflow: hidden;
+}
+.silde-items {
+	position: relative;
+	width: 300%;
+	-webkit-transition: left 1s;
+	-moz-transition: left 1s;
+	-o-transition: left 1s;
+	transition: left 1s;
+}
+.slide-content {
+	position: relative;
+	width: 33.33%;
+	float: left;
+	padding: 173px 0 163px;
+	color: #fff;
+}
+.slide-content::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+#silde-1:target ~ .silde-items {
+	left: 0%;
+}
+#silde-2:target ~ .silde-items {
+	left: -100%;
+}
+#silde-3:target ~ .silde-items {
+	left: -200%;
+}
+.talk-text {
+	width: 810px;
+	font-size: 24px;
+	line-height: 36px;
+	margin: 0 auto;
+}
+.author-name {
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 34px;
+}
+.slide-bar {
+	display: inline-block;
+	position: relative;
+	top: -60px;
+}
+.slide-bar a {
+	display: inline-block;
+	height: 6px;
+	width: 6px;
+	vertical-align: middle;
+	border-radius: 5px;
+	background-color: #fff;
+	opacity: 0.6;
+	margin: 0 5px;
+}
+.slide-bar .active {
+	height: 10px;
+	width: 10px;
+	opacity: 1;
+}
 /* footer */
 .footer {
 	padding: 100px 0 87px;
