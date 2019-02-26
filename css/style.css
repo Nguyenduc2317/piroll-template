@@ -21,11 +21,13 @@ a {
 .text-center {
 	text-align: center;
 }
+/* component */
 /* header */
 .header {
 	width: 100%;
 	position: fixed;
 	top: 0;
+	left: 0;
 	z-index: 9999;
 }
 .header-wrap {
@@ -49,166 +51,6 @@ a {
 .menu li a:hover,
 .menu li a.active {
 	color: #10c9c3;
-}
-/* form component */
-.form {
-	padding: 100px 0;
-	background-color: #f5f5f5;
-}
-.form-tittle {
-	font-size: 30px;
-}
-.form-text {
-	width: 540px;
-	font-family: 'Nunito Sans';
-	font-size: 16px;
-	color: #787878;
-	margin: 29px auto 0;
-	line-height: 24px;
-}
-.form-wrap {
-	width: 670px;
-	margin: 33px auto 0;
-}
-.input-items {
-	border: none;
-}
-.form-wrap input[type="text"],
-.input-comment {
-	font-family: 'Nunito Sans';
-	font-size: 15px;
-	text-transform: capitalize;
-	height: 54px;
-	padding-left: 20px;	
-	color: #787878;
-}
-.input-name,
-.input-email {
-	width: calc(50% - 15px);
-}
-.input-name {
-	float: left;
-}
-.input-email {
-	float: right
-}
-.input-tittle,
-.input-comment {
-	width: 100%;
-	margin-top: 40px;
-}
-.input-comment {
-	height: 170px;
-	padding: 20px 0 0 20px;
-}
-.input-button {
-	margin-top: 40px;
-	width: 180px;
-	height: 54px;
-	background-color: #10c9c3;
-	font-family: 'Montserrat';
-	font-size: 12px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #fff;
-	border: none;
-}
-/* baner */
-.baner {
-	width: 100%;
-	background: url('../images/bannercontact.png') no-repeat center left/cover;
-	background-attachment: fixed;
-	padding: 237px 0 200px;
-}
-.baner-content {
-	width: 50%;
-	float: right;
-	padding-left: 85px;
-}
-.baner-tittle {
-	font-size: 38px;
-}
-.baner-text {
-	font-family: 'Nunito Sans';
-	font-size: 18px;
-	color: #787878;
-	line-height: 24px;
-	margin-top: 28px;
-}
-.baner-button {
-	margin-top: 33px;
-}
-/* press */
-.press {
-	padding: 97px 0 100px;
-}
-.press-tittle {
-	font-size: 30px;
-	text-transform: capitalize;
-}
-.press-text {
-	width: 620px;
-	font-family: 'Nunito Sans';
-	font-size: 16px;
-	color: #787878;
-	line-height: 24px;
-	margin: 29px auto 0;
-}
-.press img {
-	margin-top: 33px;
-}
-/* skills */
-.skills {
-	background-color: #f8f9f9;
-	display: flex;
-}
-.skills-items {
-	width: 50%;
-	height: auto;
-}
-.skills-wrap {
-	width: 585px;
-	float: right;
-	padding: 100px 0;
-}
-.skills-tittle {
-	font-size: 30px;
-}
-.skills-content-lever {
-	margin-top: 33px;
-}
-.skills-content-next {
-	margin-top: 39px;
-}
-.skills-name {
-	font-size: 12px;
-	text-transform: uppercase;
-}
-.skills-name span {
-	margin-left: 10px;
-}
-.skill-bar {
-	width: 500px;
-	height: 3px;
-	background-color: #d8d8d8;
-}
-.skill-bar span {
-	display: block;
-	background-color: #10c9c3;
-	margin-top: 18px;
-	height: 100%;
-}
-.skill-bar-1 {
-	width: 75%;
-}
-.skill-bar-2 {
-	width: 90%;
-}
-.skill-bar-3 {
-	width: 65%;
-}
-.skills-img {
-	background: url('../images/bgskill.png') no-repeat right center/cover;
 }
 /* show */
 .image-items {
@@ -346,26 +188,6 @@ a {
 	line-height: 24px;
 	margin-top: 13px;
 }
-/* video */
-.view {
-	padding: 97px 0;
-}
-.view-tittle {
-	font-size: 30px;
-}
-.view-text {
-	width: 500px;
-	margin:29px auto 0;
-	font-family: 'Nunito Sans';
-	font-size: 16px;
-	color: #787878;
-	line-height: 24px;
-}
-.view-video {
-	width: 100%;
-	height: 570px;
-	margin-top: 57px;
-}
 /* slide */
 .slide {
 	background-color: #10c9c3;
@@ -386,7 +208,6 @@ a {
 	padding: 173px 0 163px;
 	color: #fff;
 }
-<<<<<<< HEAD
 /* interactive */
 .interactive {
 	background-color: #38bfbd;
@@ -479,8 +300,6 @@ a {
 	padding: 173px 0 163px;
 	color: #fff;
 }
-=======
->>>>>>> creat interactive component
 .slide-content::after {
 	display: block;
 	content: "";
@@ -526,17 +345,74 @@ a {
 	width: 10px;
 	opacity: 1;
 }
-<<<<<<< HEAD
-=======
 /* client */
 .client {
 	padding: 64px 0 61px;
 	background-color: #fff;
 }
-.client-items {
-	width: 20%;
+/* form component */
+.form {
+	padding: 100px 0;
+	background-color: #f5f5f5;
 }
->>>>>>> creat interactive component
+.form-tittle {
+	font-size: 30px;
+}
+.form-text {
+	width: 540px;
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	color: #787878;
+	margin: 29px auto 0;
+	line-height: 24px;
+}
+.form-wrap {
+	width: 670px;
+	margin: 33px auto 0;
+}
+.input-items {
+	border: none;
+}
+.form-wrap input[type="text"],
+textarea {
+	font-family: 'Nunito Sans';
+	font-size: 15px;
+	text-transform: capitalize;
+	height: 54px;
+	padding-left: 20px;	
+	color: #787878;
+}
+.input-name,
+.input-email {
+	width: calc(50% - 15px);
+}
+.input-name {
+	float: left;
+}
+.input-email {
+	float: right;
+}
+.input-tittle,
+.input-comment {
+	width: 100%;
+	margin-top: 40px;
+}
+.input-comment {
+	height: 170px;
+	padding: 20px 0 0 20px;
+}
+.button {
+	margin-top: 40px;
+	width: 180px;
+	height: 54px;
+	background-color: #10c9c3;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	border: none;
+}
 /* footer */
 .footer {
 	padding: 100px 0 87px;
@@ -585,4 +461,118 @@ a {
 }
 .footer a:hover {
 	color: #10c9c3;
+}
+/* end-component */
+/* baner */
+.baner {
+	width: 100%;
+	background: url('../images/bannercontact.png') no-repeat center left/cover;
+	background-attachment: fixed;
+	padding: 237px 0 200px;
+}
+.baner-content {
+	width: 50%;
+	float: right;
+	padding-left: 85px;
+}
+.baner-tittle {
+	font-size: 38px;
+}
+.baner-text {
+	font-family: 'Nunito Sans';
+	font-size: 18px;
+	color: #787878;
+	line-height: 24px;
+	margin-top: 28px;
+}
+.baner-button {
+	margin-top: 33px;
+}
+/* press */
+.press {
+	padding: 97px 0 100px;
+}
+.press-tittle {
+	font-size: 30px;
+	text-transform: capitalize;
+}
+.press-text {
+	width: 620px;
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	color: #787878;
+	line-height: 24px;
+	margin: 29px auto 0;
+}
+.press img {
+	margin-top: 33px;
+}
+/* skills */
+.skills {
+	background: url('../images/bgskill.png') no-repeat right center/cover;
+	padding: 100px 0;
+}
+.skills-tittle {
+	font-size: 30px;
+}
+.skills-content-lever {
+	margin-top: 33px;
+}
+.skills-content-next {
+	margin-top: 39px;
+}
+.skills-name {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.skills-name span {
+	margin-left: 10px;
+}
+.skill-bar {
+	width: 500px;
+	height: 3px;
+	background-color: #d8d8d8;
+}
+.skill-bar span {
+	display: block;
+	background-color: #10c9c3;
+	margin-top: 18px;
+	height: 100%;
+}
+.skill-bar-1 {
+	width: 75%;
+}
+.skill-bar-2 {
+	width: 90%;
+}
+.skill-bar-3 {
+	width: 65%;
+}
+/* video */
+.view {
+	padding: 97px 0;
+}
+.view-tittle {
+	font-size: 30px;
+}
+.view-text {
+	width: 500px;
+	margin:29px auto 0;
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	color: #787878;
+	line-height: 24px;
+}
+.view-video {
+	width: 100%;
+	height: 570px;
+	margin-top: 57px;
+}
+/* client */
+.client {
+	padding: 64px 0 61px;
+	background-color: #fff;
+}
+.client-items {
+	width: 20%;
 }
